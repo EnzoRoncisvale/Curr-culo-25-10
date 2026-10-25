@@ -1,0 +1,137 @@
+/* ========================================================
+   ENZO RONCISVALE - LANDING PAGE & RESUME STYLES
+   ======================================================== */
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Base Smooth Transition */
+* {
+  box-sizing: border-box;
+}
+
+/* Active Nav Link Marker */
+.nav-active {
+  color: #38bdf8 !important;
+  font-weight: 600;
+}
+
+/* Subtle Card Glow on Hover */
+.glow-on-hover:hover {
+  box-shadow: 0 0 25px -5px rgba(59, 130, 246, 0.3);
+}
+
+/* ========================================================
+   PRINT STYLESHEET (A4 Clean Resume for Recruiters)
+   ======================================================== */
+@media print {
+  /* Hide all interactive landing page elements */
+  header,
+  footer,
+  aside,
+  button,
+  .no-print,
+  #inicio,
+  #sobre,
+  #formacao,
+  #habilidades,
+  #experiencia,
+  #projetos,
+  #contato,
+  #toast {
+    display: none !important;
+  }
+
+  body {
+    background-color: #ffffff !important;
+    color: #1e293b !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 11pt !important;
+    line-height: 1.4 !important;
+    margin: 0 !important;
+    padding: 20px !important;
+  }
+
+  #printResume {
+    display: block !important;
+  }
+
+  .print-container {
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .print-header {
+    border-bottom: 2px solid #0f172a;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+  }
+
+  .print-header h1 {
+    font-size: 24pt !important;
+    margin: 0 0 4px 0 !important;
+    font-weight: 800 !important;
+    color: #0f172a !important;
+    text-transform: uppercase;
+  }
+
+  .print-header h2 {
+    font-size: 12pt !important;
+    margin: 0 0 8px 0 !important;
+    font-weight: 600 !important;
+    color: #2563eb !important;
+  }
+
+  .print-contact {
+    font-size: 9.5pt !important;
+    color: #475569 !important;
+  }
+
+  .print-section {
+    margin-bottom: 16px !important;
+  }
+
+  .print-section h3 {
+    font-size: 11.5pt !important;
+    text-transform: uppercase !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    border-bottom: 1px solid #cbd5e1 !important;
+    padding-bottom: 4px !important;
+    margin: 12px 0 6px 0 !important;
+    letter-spacing: 0.5px;
+  }
+
+  .print-section p {
+    font-size: 10pt !important;
+    color: #334155 !important;
+    margin: 4px 0 !important;
+    text-align: justify;
+  }
+
+  .print-section ul {
+    margin: 4px 0 6px 18px !important;
+    padding: 0 !important;
+  }
+
+  .print-section li {
+    font-size: 9.5pt !important;
+    color: #334155 !important;
+    margin-bottom: 4px !important;
+  }
+}

@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enzo Roncisvale | Ensino Superior em ADS & Pós-Graduação em Ciência de Dados (CEUB)</title>
+  <meta name="description" content="Currículo e portfólio de Enzo Roncisvale - Ensino Superior em Análise e Desenvolvimento de Sistemas pelo CEUB e Pós-Graduando em Ciência de Dados também pelo CEUB. Especialista em Banco de Dados, SQL, Power BI e Desenvolvimento.">
+  <meta name="author" content="Enzo Roncisvale">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
+
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              300: '#93c5fd',
+              400: '#60a5fa',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+            },
+            accent: {
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+            },
+            data: {
+              teal: '#14b8a6',
+              emerald: '#10b981',
+              violet: '#8b5cf6',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans transition-colors duration-300 selection:bg-brand-500 selection:text-white">
+
+  <!-- Background Ambient Glow -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-brand-600/20 rounded-full blur-3xl"></div>
+    <div class="absolute top-1/3 -right-40 w-96 h-96 bg-accent-500/15 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-10 left-1/3 w-80 h-80 bg-data-teal/15 rounded-full blur-3xl"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(#334155_1px,transparent_1px)] [background-size:24px_24px] opacity-25"></div>
+  </div>
+
+  <!-- Top Navigation Bar -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-900/85 border-b border-slate-800 transition-all duration-300" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#inicio" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-brand-600 to-accent-500 flex items-center justify-center text-white font-display font-extrabold text-xl shadow-lg shadow-brand-500/25 group-hover:scale-105 transition-transform">
+          ER
+        </div>
+        <div>
+          <span class="font-display font-bold text-lg text-white group-hover:text-brand-400 transition-colors">Enzo Roncisvale</span>
+          <span class="block text-xs text-slate-400 font-medium">Dados &amp; Sistemas • CEUB</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-7">
+        <a href="#inicio" class="text-sm font-medium text-slate-300 hover:text-brand-400 transition-colors">Início</a>
+        <a href="#sobre" class="text-sm font-medium text-slate-300 hover:text-brand-400 transition-colors">Sobre</a>
+        <a href="#formacao" class="text-sm font-medium text-slate-300 hover:text-brand-400 transition-colors">Formação CEUB</a>
+        <a href="#habilidades" class="text-sm font-medium text-slate-300 hover:text-brand-400 transition-colors">Habilidades</a>
+        <a href="#experiencia" class="text-sm font-medium text-slate-300 hover:text-brand-400 transition-colors">Experiência</a>
+        <a href="#projetos" class="text-sm font-medium text-slate-300 hover:text-brand-400 transition-colors">Projetos</a>
+        <a href="#contato" class="text-sm font-medium text-slate-300 hover:text-brand-400 transition-colors">Contato</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="hidden sm:flex items-center gap-2.5">
+        
+        <!-- GitHub Button in Navbar -->
+        <a href="https://github.com/EnzoRoncisvale" target="_blank" rel="noopener noreferrer" title="Ver GitHub de Enzo Roncisvale" class="px-3.5 py-2 rounded-lg border border-slate-700 hover:border-slate-500 bg-slate-800/90 text-slate-200 text-xs font-semibold flex items-center gap-2 hover:bg-slate-700 transition">
+          <i class="fa-brands fa-github text-sm text-white"></i>
+          <span>GitHub</span>
+        </a>
+
+        <!-- Print / PDF CV Button -->
+        <button onclick="window.print()" title="Imprimir ou Salvar em PDF" class="px-3 py-2 rounded-lg border border-slate-700 hover:border-slate-500 bg-slate-800/80 text-slate-300 text-xs font-semibold flex items-center gap-1.5 hover:bg-slate-700 transition">
+          <i class="fa-solid fa-print"></i>
+          <span>PDF</span>
+        </button>
+
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/5561982217080?text=Ol%C3%A1%20Enzo,%20vi%20seu%20curr%C3%ADculo%20e%20gostaria%20de%20conversar!" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white text-xs font-bold flex items-center gap-2 shadow-md shadow-emerald-500/20 hover:scale-105 transition-all">
+          <i class="fa-brands fa-whatsapp text-sm"></i>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button id="mobileMenuBtn" aria-label="Abrir Menu" class="md:hidden p-2.5 rounded-lg border border-slate-700 bg-slate-800 text-slate-300 hover:text-white">
+        <i class="fa-solid fa-bars text-lg" id="menuIcon"></i>
+      </button>
+
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="hidden md:hidden border-b border-slate-800 bg-slate-900/95 px-4 pt-2 pb-6 space-y-3 backdrop-blur-xl">
+      <a href="#inicio" class="mobile-nav-link block py-2 text-slate-300 hover:text-brand-400 font-medium">Início</a>
+      <a href="#sobre" class="mobile-nav-link block py-2 text-slate-300 hover:text-brand-400 font-medium">Sobre Mim</a>
+      <a href="#formacao" class="mobile-nav-link block py-2 text-slate-300 hover:text-brand-400 font-medium">Formação CEUB</a>
+      <a href="#habilidades" class="mobile-nav-link block py-2 text-slate-300 hover:text-brand-400 font-medium">Habilidades</a>
+      <a href="#experiencia" class="mobile-nav-link block py-2 text-slate-300 hover:text-brand-400 font-medium">Experiência</a>
+      <a href="#projetos" class="mobile-nav-link block py-2 text-slate-300 hover:text-brand-400 font-medium">Projetos &amp; Repositórios</a>
+      <a href="#contato" class="mobile-nav-link block py-2 text-slate-300 hover:text-brand-400 font-medium">Contato</a>
+      
+      <div class="pt-4 flex flex-col gap-2 border-t border-slate-800">
+        <a href="https://github.com/EnzoRoncisvale" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-lg border border-slate-700 bg-slate-800 text-white text-sm font-semibold flex items-center justify-center gap-2">
+          <i class="fa-brands fa-github text-base"></i>
+          <span>Acessar Meu GitHub</span>
+        </a>
+        <button onclick="window.print()" class="w-full py-2.5 rounded-lg border border-slate-700 bg-slate-800 text-slate-200 text-sm font-semibold flex items-center justify-center gap-2">
+          <i class="fa-solid fa-print"></i>
+          <span>Imprimir / Salvar PDF</span>
+        </button>
+        <a href="https://wa.me/5561982217080?text=Ol%C3%A1%20Enzo,%20vi%20seu%20curr%C3%ADculo%20e%20gostaria%20de%20conversar!" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-lg bg-emerald-600 text-white text-sm font-bold flex items-center justify-center gap-2">
+          <i class="fa-brands fa-whatsapp text-base"></i>
+          <span>Falar pelo WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="inicio" class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Hero Left Content -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            
+            <!-- Availability Badge -->
+            <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-slate-800/90 border border-slate-700 text-xs font-semibold text-slate-300 backdrop-blur-sm shadow-sm">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span>Disponível para Oportunidades em Tecnologia &amp; Dados</span>
+            </div>
+
+            <!-- Main Name -->
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-display tracking-tight text-white leading-tight">
+              Olá, eu sou <br class="hidden sm:inline">
+              <span class="bg-gradient-to-r from-brand-400 via-accent-400 to-data-teal bg-clip-text text-transparent">
+                Enzo Roncisvale
+              </span>
+            </h1>
+
+            <!-- EMPHASIZED DIPLOMA & POSTGRADUATE HIGHLIGHT: CEUB INTEGRAL -->
+            <div class="p-5 sm:p-6 rounded-2xl bg-gradient-to-r from-brand-950/60 via-slate-800/90 to-slate-850 border border-brand-500/40 shadow-2xl backdrop-blur-sm relative overflow-hidden group">
+              <div class="absolute -right-10 -bottom-10 w-36 h-36 bg-brand-500/10 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-500"></div>
+              
+              <div class="flex items-start gap-4 text-left">
+                <div class="w-13 h-13 rounded-2xl bg-gradient-to-tr from-brand-600/30 to-accent-500/20 border border-brand-500/50 flex items-center justify-center text-brand-400 text-2xl flex-shrink-0 p-3 mt-1 shadow-md">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="space-y-2">
+                  <div class="flex flex-wrap items-center gap-2">
+                    <span class="text-xs font-bold uppercase tracking-wider text-brand-400 bg-brand-500/15 px-2.5 py-0.5 rounded border border-brand-500/30">Formação de Destaque</span>
+                    <span class="text-xs font-bold text-amber-300 bg-amber-500/10 px-2.5 py-0.5 rounded border border-amber-500/20 flex items-center gap-1.5">
+                      <i class="fa-solid fa-building-columns text-[10px]"></i> Ambas no CEUB
+                    </span>
+                  </div>
+                  
+                  <!-- Formado em Ensino Superior em ADS -->
+                  <h2 class="text-lg sm:text-xl font-bold text-white font-display leading-snug">
+                    Formado em <span class="text-brand-300 underline decoration-brand-500 decoration-2 underline-offset-4">Ensino Superior em Análise e Desenvolvimento de Sistemas</span>
+                    <span class="text-xs font-semibold text-slate-300 bg-slate-800 px-2 py-0.5 rounded ml-1 border border-slate-700">CEUB</span>
+                  </h2>
+
+                  <!-- Cursando Pós-Graduação em Ciência de Dados TAMBÉM NO CEUB -->
+                  <p class="text-sm sm:text-base font-semibold text-accent-400 flex flex-wrap items-center gap-2">
+                    <span class="inline-flex items-center gap-1.5 text-white">
+                      <i class="fa-solid fa-circle-notch text-xs text-accent-400 animate-spin"></i>
+                      Cursando Pós-Graduação em <span class="text-accent-300 font-bold underline decoration-accent-400 decoration-2 underline-offset-4">Ciência de Dados</span>
+                    </span>
+                    <span class="text-xs font-bold uppercase text-white bg-accent-600/80 px-2.5 py-0.5 rounded border border-accent-400 shadow-sm">
+                      Também no CEUB
+                    </span>
+                  </p>
+
+                  <p class="text-xs text-slate-300 pt-1 leading-relaxed">
+                    <strong>Centro Universitário de Brasília (CEUB)</strong> • Trajetória acadêmica integral conectando desenvolvimento estruturado de software, engenharia de bancos de dados relacionais e modelagem analítica preditiva.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Objective Paragraph -->
+            <p class="text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
+              Focado em <strong class="text-white font-semibold">Banco de Dados, Análise de Dados e Desenvolvimento de Sistemas</strong>. Atuação prática de 10 meses na CASSI com manipulação de queries SQL, processos administrativos e integridade de bases corporativas.
+            </p>
+
+            <!-- Quick Metadata Badges -->
+            <div class="flex flex-wrap justify-center lg:justify-start gap-3 pt-1 text-xs text-slate-300">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800/80 border border-slate-700">
+                <i class="fa-solid fa-location-dot text-rose-400"></i> Brasília - DF
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800/80 border border-slate-700">
+                <i class="fa-solid fa-language text-accent-400"></i> Inglês Avançado (Manchester, UK)
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800/80 border border-slate-700">
+                <i class="fa-solid fa-database text-brand-400"></i> SQL &amp; Modelagem
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800/80 border border-slate-700">
+                <i class="fa-brands fa-github text-white"></i> Código Aberto &amp; Repositórios
+              </span>
+            </div>
+
+            <!-- Hero Action Buttons: GitHub + LinkedIn + Contato -->
+            <div class="flex flex-wrap justify-center lg:justify-start items-center gap-3.5 pt-2">
+              
+              <!-- GitHub CTA Principal -->
+              <a href="https://github.com/EnzoRoncisvale" target="_blank" rel="noopener noreferrer" class="px-5 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 border-2 border-slate-600 hover:border-slate-400 text-white font-bold text-sm flex items-center gap-2.5 shadow-lg shadow-black/30 hover:scale-105 active:scale-95 transition-all">
+                <i class="fa-brands fa-github text-lg text-white"></i>
+                <span>Acessar Meu GitHub</span>
+              </a>
+
+              <!-- LinkedIn CTA -->
+              <a href="https://www.linkedin.com/in/enzo-roncisvale-164890215/" target="_blank" rel="noopener noreferrer" class="px-5 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 to-brand-600 hover:from-blue-700 hover:to-brand-700 text-white font-bold text-sm flex items-center gap-2.5 shadow-lg shadow-blue-500/25 hover:scale-105 active:scale-95 transition-all">
+                <i class="fa-brands fa-linkedin text-lg"></i>
+                <span>LinkedIn</span>
+              </a>
+
+              <!-- Contato -->
+              <a href="#contato" class="px-4 py-3.5 rounded-xl bg-slate-850 hover:bg-slate-800 border border-slate-700 hover:border-slate-600 text-slate-200 hover:text-white font-semibold text-sm flex items-center gap-2 hover:scale-105 active:scale-95 transition-all">
+                <i class="fa-solid fa-envelope text-brand-400"></i>
+                <span>Fale Comigo</span>
+              </a>
+
+            </div>
+
+          </div>
+
+          <!-- Hero Right: Interactive Profile Card -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="w-full max-w-md bg-gradient-to-b from-slate-800/90 to-slate-900/90 border border-slate-700/80 rounded-3xl p-6 sm:p-8 shadow-2xl backdrop-blur-xl relative">
+              
+              <!-- Subtle top gradient bar -->
+              <div class="absolute top-0 left-8 right-8 h-1 bg-gradient-to-r from-brand-500 via-accent-400 to-data-teal rounded-full"></div>
+
+              <!-- Avatar & Header info -->
+              <div class="flex flex-col items-center text-center pb-6 border-b border-slate-700/60">
+                <div class="relative mb-4">
+                  <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-gradient-to-tr from-brand-600 via-accent-600 to-data-teal p-1 shadow-xl shadow-brand-500/20">
+                    <div class="w-full h-full bg-slate-900 rounded-[14px] flex items-center justify-center text-white">
+                      <span class="text-3xl sm:text-4xl font-display font-extrabold tracking-wider bg-gradient-to-br from-white to-slate-300 bg-clip-text text-transparent">ER</span>
+                    </div>
+                  </div>
+                  <div class="absolute -bottom-1 -right-1 w-7 h-7 bg-emerald-500 border-4 border-slate-900 rounded-full flex items-center justify-center text-[10px] text-white" title="Disponível para contratação">
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                </div>
+
+                <h3 class="text-xl font-bold font-display text-white">Enzo Roncisvale</h3>
+                <p class="text-sm font-medium text-brand-400 mt-1">Dados &amp; Desenvolvimento de Sistemas</p>
+                <div class="flex items-center gap-3 mt-1.5 text-xs text-slate-400">
+                  <span><i class="fa-solid fa-location-dot text-rose-400 mr-1"></i>Brasília - DF</span>
+                  <span>•</span>
+                  <a href="https://github.com/EnzoRoncisvale" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-white flex items-center gap-1 font-mono">
+                    <i class="fa-brands fa-github text-sm"></i> @EnzoRoncisvale
+                  </a>
+                </div>
+              </div>
+
+              <!-- Quick Highlights list -->
+              <div class="py-5 space-y-3.5 text-xs text-slate-300">
+                
+                <!-- Ensino Superior ADS CEUB -->
+                <div class="p-2.5 rounded-xl bg-slate-800/60 border border-slate-700/40">
+                  <div class="flex items-center justify-between text-slate-400">
+                    <span class="flex items-center gap-2">
+                      <i class="fa-solid fa-award text-brand-400"></i> Graduação Superior
+                    </span>
+                    <span class="font-bold text-brand-300 text-[11px] bg-brand-500/10 px-2 py-0.5 rounded border border-brand-500/20">CEUB</span>
+                  </div>
+                  <div class="font-semibold text-white mt-1">Ensino Superior em Análise e Desenv. de Sistemas</div>
+                </div>
+
+                <!-- Pós-Graduação Ciência de Dados CEUB -->
+                <div class="p-2.5 rounded-xl bg-slate-800/60 border border-slate-700/40">
+                  <div class="flex items-center justify-between text-slate-400">
+                    <span class="flex items-center gap-2">
+                      <i class="fa-solid fa-chart-line text-accent-400"></i> Pós-Graduação
+                    </span>
+                    <span class="font-bold text-accent-300 text-[11px] bg-accent-500/10 px-2 py-0.5 rounded border border-accent-500/20">Também no CEUB</span>
+                  </div>
+                  <div class="font-semibold text-accent-300 mt-1">Especialização em Ciência de Dados</div>
+                </div>
+
+                <!-- Experiência CASSI -->
+                <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-800/60 border border-slate-700/40">
+                  <span class="flex items-center gap-2 text-slate-400">
+                    <i class="fa-solid fa-briefcase text-emerald-400"></i> Experiência Prática
+                  </span>
+                  <span class="font-semibold text-white">10 meses na CASSI</span>
+                </div>
+
+                <!-- Idioma Manchester -->
+                <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-800/60 border border-slate-700/40">
+                  <span class="flex items-center gap-2 text-slate-400">
+                    <i class="fa-solid fa-globe text-sky-400"></i> Idioma Internacional
+                  </span>
+                  <span class="font-semibold text-white">Inglês Avançado (Manchester)</span>
+                </div>
+              </div>
+
+              <!-- Quick Connect CTA Buttons -->
+              <div class="pt-2 grid grid-cols-2 gap-2.5">
+                <a href="https://github.com/EnzoRoncisvale" target="_blank" rel="noopener noreferrer" class="py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-medium text-xs flex items-center justify-center gap-2 border border-slate-700 transition">
+                  <i class="fa-brands fa-github text-sm"></i>
+                  <span>Ver Repositórios</span>
+                </a>
+                <button onclick="copyToClipboard('enzoroncisvale@gmail.com', 'E-mail copiado!')" class="py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white font-medium text-xs flex items-center justify-center gap-2 border border-slate-700 transition" title="Copiar e-mail">
+                  <i class="fa-regular fa-copy"></i>
+                  <span>Copiar E-mail</span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- KEY METRICS BANNER -->
+    <section class="py-8 border-y border-slate-800/80 bg-slate-900/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          
+          <div class="p-4 rounded-xl bg-slate-800/40 border border-slate-700/40">
+            <div class="text-3xl font-extrabold font-display text-white">ADS</div>
+            <div class="text-xs text-brand-400 font-semibold mt-1">Formado no CEUB</div>
+            <div class="text-[11px] text-slate-400 mt-0.5">Ensino Superior em Análise de Sistemas</div>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-800/40 border border-slate-700/40">
+            <div class="text-3xl font-extrabold font-display text-accent-400">Pós no CEUB</div>
+            <div class="text-xs text-accent-300 font-semibold mt-1">Ciência de Dados</div>
+            <div class="text-[11px] text-slate-400 mt-0.5">Especialização em Andamento</div>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-800/40 border border-slate-700/40">
+            <div class="text-3xl font-extrabold font-display text-emerald-400">10 Meses</div>
+            <div class="text-xs text-emerald-300 font-semibold mt-1">Vivência CASSI</div>
+            <div class="text-[11px] text-slate-400 mt-0.5">Banco de Dados &amp; Operações</div>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-800/40 border border-slate-700/40">
+            <div class="text-3xl font-extrabold font-display text-sky-400">C1 / Adv</div>
+            <div class="text-xs text-sky-300 font-semibold mt-1">Inglês EC Manchester</div>
+            <div class="text-[11px] text-slate-400 mt-0.5">Vivência no Reino Unido</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION (SOBRE MIM) -->
+    <section id="sobre" class="py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-400 bg-brand-500/10 px-3 py-1 rounded-full border border-brand-500/20">Apresentação</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-display text-white mt-3">Sobre Mim &amp; Propósito</h2>
+          <p class="text-slate-400 text-sm sm:text-base mt-3">
+            Constante evolução técnica, curiosidade investigativa e dedicação para solucionar problemas complexos através de tecnologia.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Card 1: Formação ADS no CEUB -->
+          <div class="bg-slate-800/50 hover:bg-slate-800/80 border border-slate-700/70 hover:border-brand-500/50 rounded-2xl p-7 transition duration-300 group shadow-lg">
+            <div class="w-14 h-14 rounded-2xl bg-brand-500/15 text-brand-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-brand-500 group-hover:text-white transition-all">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-xl font-bold font-display text-white">Desenvolvimento de Sistemas</h3>
+              <span class="text-[11px] font-bold text-brand-400 bg-brand-500/10 px-2 py-0.5 rounded border border-brand-500/20">CEUB</span>
+            </div>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Formado em <strong>Ensino Superior em Análise e Desenvolvimento de Sistemas pelo CEUB</strong>, domino a lógica de programação, arquitetura de sistemas web, modelagem relacional e o ciclo de vida do software com foco em boas práticas e qualidade de código.
+            </p>
+          </div>
+
+          <!-- Card 2: Ciência de Dados & Analytics TAMBÉM NO CEUB -->
+          <div class="bg-slate-800/50 hover:bg-slate-800/80 border border-slate-700/70 hover:border-accent-500/50 rounded-2xl p-7 transition duration-300 group shadow-lg">
+            <div class="w-14 h-14 rounded-2xl bg-accent-500/15 text-accent-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-accent-500 group-hover:text-white transition-all">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-xl font-bold font-display text-white">Ciência de Dados &amp; BI</h3>
+              <span class="text-[11px] font-bold text-accent-300 bg-accent-500/10 px-2 py-0.5 rounded border border-accent-500/20">Também no CEUB</span>
+            </div>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Atualmente cursando a <strong>Pós-Graduação em Ciência de Dados também no CEUB</strong>. Foco no aprofundamento analítico, manipulação estatística, queries em SQL de alta performance, visualização estratégica em Power BI e modelagem preditiva.
+            </p>
+          </div>
+
+          <!-- Card 3: Comunicação & Inglês -->
+          <div class="bg-slate-800/50 hover:bg-slate-800/80 border border-slate-700/70 hover:border-emerald-500/50 rounded-2xl p-7 transition duration-300 group shadow-lg">
+            <div class="w-14 h-14 rounded-2xl bg-emerald-500/15 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-emerald-500 group-hover:text-white transition-all">
+              <i class="fa-solid fa-earth-americas"></i>
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-xl font-bold font-display text-white">Visão Global &amp; Soft Skills</h3>
+              <span class="text-[11px] font-bold text-sky-400 bg-sky-500/10 px-2 py-0.5 rounded border border-sky-500/20">Manchester, UK</span>
+            </div>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Com imersão internacional na <strong>EC Manchester Language School (Reino Unido)</strong>, possuo fluência em inglês para comunicação técnica e cooperação multicultural, somada a perfil proativo, adaptabilidade e foco em resolução de problemas.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS (FORMAÇÃO ACADÊMICA CEUB) -->
+    <section id="formacao" class="py-20 bg-slate-900/40 border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-xs font-bold text-brand-400 uppercase tracking-wider mb-2">
+            <i class="fa-solid fa-building-columns"></i>
+            <span>Centro Universitário de Brasília (CEUB)</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-display text-white mt-1">Formação Acadêmica &amp; Intercâmbio</h2>
+          <p class="text-slate-400 text-sm sm:text-base mt-3">
+            Formação de Ensino Superior e Pós-Graduação ambas realizadas no <strong>CEUB</strong>, complementadas por aperfeiçoamento linguístico no exterior.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          
+          <!-- Graduação: Ensino Superior em ADS no CEUB -->
+          <div class="relative bg-gradient-to-b from-slate-800 to-slate-850 rounded-3xl p-8 border-2 border-brand-500/50 shadow-xl shadow-brand-500/10 flex flex-col justify-between group hover:border-brand-400 transition-all">
+            <div class="absolute -top-3.5 right-6 bg-brand-600 text-white text-[11px] font-bold uppercase tracking-wider px-3.5 py-1 rounded-full shadow-md">
+              Graduação Concluída
+            </div>
+
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-brand-500/20 text-brand-400 flex items-center justify-center text-xl mb-5">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              
+              <div class="flex items-center gap-1.5 text-xs font-bold text-brand-400">
+                <i class="fa-solid fa-building-columns"></i>
+                <span>Centro Universitário de Brasília - CEUB</span>
+              </div>
+              <h3 class="text-xl font-bold font-display text-white mt-1.5">Ensino Superior em Análise e Desenvolvimento de Sistemas</h3>
+              <p class="text-xs text-brand-300 font-medium mt-1">Grau: Ensino Superior • Período: 07/2022 a 11/2025</p>
+
+              <div class="mt-5 space-y-2.5 text-xs text-slate-300">
+                <p class="flex items-start gap-2">
+                  <i class="fa-solid fa-check text-brand-400 mt-1"></i>
+                  <span>Estruturação completa de sistemas, engenharia de software e padrões de projeto.</span>
+                </p>
+                <p class="flex items-start gap-2">
+                  <i class="fa-solid fa-check text-brand-400 mt-1"></i>
+                  <span>Modelagem de dados relacional, administração de bancos de dados e comandos SQL.</span>
+                </p>
+                <p class="flex items-start gap-2">
+                  <i class="fa-solid fa-check text-brand-400 mt-1"></i>
+                  <span>Desenvolvimento Web full-stack, segurança da informação e autenticação.</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-slate-700/60 flex items-center justify-between text-xs text-slate-400">
+              <span>Status: <strong class="text-emerald-400">Formado (Ensino Superior)</strong></span>
+              <span>Brasília - DF</span>
+            </div>
+          </div>
+
+          <!-- Pós-Graduação: Ciência de Dados TAMBÉM NO CEUB -->
+          <div class="relative bg-gradient-to-b from-slate-800 to-slate-850 rounded-3xl p-8 border-2 border-accent-500/50 shadow-xl shadow-accent-500/10 flex flex-col justify-between group hover:border-accent-400 transition-all">
+            <div class="absolute -top-3.5 right-6 bg-accent-600 text-white text-[11px] font-bold uppercase tracking-wider px-3.5 py-1 rounded-full shadow-md flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+              Em Andamento
+            </div>
+
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-accent-500/20 text-accent-400 flex items-center justify-center text-xl mb-5">
+                <i class="fa-solid fa-chart-pie"></i>
+              </div>
+              
+              <div class="flex items-center gap-1.5 text-xs font-bold text-accent-300">
+                <i class="fa-solid fa-building-columns"></i>
+                <span>Centro Universitário de Brasília - CEUB</span>
+                <span class="text-[10px] bg-accent-500/20 px-1.5 py-0.2 rounded border border-accent-500/30 font-semibold ml-1">Também no CEUB</span>
+              </div>
+              <h3 class="text-xl font-bold font-display text-white mt-1.5">Pós-Graduação em Ciência de Dados</h3>
+              <p class="text-xs text-accent-300 font-medium mt-1">Especialização Lato Sensu • Período: 07/2026 - 07/2027</p>
+
+              <div class="mt-5 space-y-2.5 text-xs text-slate-300">
+                <p class="flex items-start gap-2">
+                  <i class="fa-solid fa-check text-accent-400 mt-1"></i>
+                  <span>Técnicas avançadas de mineração, exploração e tratamento estatístico de grandes volumes de dados.</span>
+                </p>
+                <p class="flex items-start gap-2">
+                  <i class="fa-solid fa-check text-accent-400 mt-1"></i>
+                  <span>Criação de modelos analíticos preditivos e aprendizado de máquina (Machine Learning).</span>
+                </p>
+                <p class="flex items-start gap-2">
+                  <i class="fa-solid fa-check text-accent-400 mt-1"></i>
+                  <span>Visualização de dados executiva, storytelling com dados e suporte à tomada de decisão.</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-slate-700/60 flex items-center justify-between text-xs text-slate-400">
+              <span>Status: <strong class="text-accent-400">Cursando Especialização no CEUB</strong></span>
+              <span>Brasília - DF</span>
+            </div>
+          </div>
+
+          <!-- Curso Internacional de Inglês EC Manchester -->
+          <div class="relative bg-gradient-to-b from-slate-800 to-slate-850 rounded-3xl p-8 border border-slate-700/80 shadow-xl flex flex-col justify-between group hover:border-slate-500 transition-all">
+            <div class="absolute -top-3.5 right-6 bg-slate-700 text-slate-200 text-[11px] font-bold uppercase tracking-wider px-3.5 py-1 rounded-full shadow-md">
+              Internacional
+            </div>
+
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center text-xl mb-5">
+                <i class="fa-solid fa-earth-europe"></i>
+              </div>
+              
+              <div class="flex items-center gap-1.5 text-xs font-semibold text-slate-400">
+                <i class="fa-solid fa-location-dot text-rose-400"></i>
+                <span>Manchester, Reino Unido</span>
+              </div>
+              <h3 class="text-xl font-bold font-display text-white mt-1.5">General English Course - Avançado</h3>
+              <p class="text-xs text-sky-300 font-medium mt-1">EC Manchester English Language School • 03/2019 a 07/2019</p>
+
+              <div class="mt-5 space-y-2.5 text-xs text-slate-300">
+                <p class="flex items-start gap-2">
+                  <i class="fa-solid fa-check text-sky-400 mt-1"></i>
+                  <span>Capacidade de comunicação corporativa e técnica com fluência nativa e internacional.</span>
+                </p>
+                <p class="flex items-start gap-2">
+                  <i class="fa-solid fa-check text-sky-400 mt-1"></i>
+                  <span>Leitura técnica de documentações de software, bibliotecas de dados e artigos em inglês sem barreiras.</span>
+                </p>
+                <p class="flex items-start gap-2">
+                  <i class="fa-solid fa-check text-sky-400 mt-1"></i>
+                  <span>Vivência e imersão cultural no exterior, potencializando adaptabilidade e soft skills.</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-slate-700/60 flex items-center justify-between text-xs text-slate-400">
+              <span>Status: <strong class="text-white">Concluído (Nível Avançado)</strong></span>
+              <span>Reino Unido</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROFESSIONAL EXPERIENCE (EXPERIÊNCIA PROFISSIONAL) -->
+    <section id="experiencia" class="py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">Carreira</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-display text-white mt-3">Experiência Profissional</h2>
+          <p class="text-slate-400 text-sm sm:text-base mt-3">
+            Atuação direta com banco de dados corporativos e otimização de fluxos analíticos.
+          </p>
+        </div>
+
+        <div class="max-w-4xl mx-auto">
+          
+          <!-- Experience Card: CASSI -->
+          <div class="relative pl-8 sm:pl-12 border-l-2 border-brand-500/50 pb-8">
+            <!-- Timeline Icon Marker -->
+            <div class="absolute -left-4 sm:-left-5 top-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-brand-600 border-4 border-slate-900 flex items-center justify-center text-white text-xs sm:text-sm shadow-md">
+              <i class="fa-solid fa-building"></i>
+            </div>
+
+            <!-- Content Container -->
+            <div class="bg-gradient-to-br from-slate-800/80 to-slate-900/90 border border-slate-700/80 rounded-2xl p-6 sm:p-8 shadow-xl">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4 border-b border-slate-700/60">
+                <div>
+                  <h3 class="text-2xl font-bold font-display text-white">CASSI (Caixa de Assistência dos Funcionários do Banco do Brasil)</h3>
+                  <p class="text-sm font-semibold text-brand-400 mt-1">
+                    Atuação em Consulta de Banco de Dados e Processos Administrativos
+                  </p>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 text-xs font-bold whitespace-nowrap">
+                    10 Meses de Atuação
+                  </span>
+                </div>
+              </div>
+
+              <!-- Responsibilities & Highlights -->
+              <div class="mt-6 space-y-3.5 text-sm text-slate-300">
+                <div class="flex items-start gap-3">
+                  <div class="w-5 h-5 rounded-md bg-brand-500/20 text-brand-400 flex items-center justify-center text-xs flex-shrink-0 mt-0.5">
+                    <i class="fa-solid fa-database"></i>
+                  </div>
+                  <div>
+                    <strong class="text-white">Consultas Estruturadas &amp; Extração de Dados:</strong>
+                    Elaboração e execução de queries em banco de dados relacional para levantamento de relatórios, validação de integridade cadastral e suporte técnico a demandas operacionais.
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <div class="w-5 h-5 rounded-md bg-brand-500/20 text-brand-400 flex items-center justify-center text-xs flex-shrink-0 mt-0.5">
+                    <i class="fa-solid fa-sliders"></i>
+                  </div>
+                  <div>
+                    <strong class="text-white">Otimização de Processos Administrativos:</strong>
+                    Análise do fluxo de trabalho administrativo, contribuindo para a agilidade e acurácia no processamento de informações sensíveis da instituição.
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <div class="w-5 h-5 rounded-md bg-brand-500/20 text-brand-400 flex items-center justify-center text-xs flex-shrink-0 mt-0.5">
+                    <i class="fa-solid fa-shield-halved"></i>
+                  </div>
+                  <div>
+                    <strong class="text-white">Segurança e Governança da Informação:</strong>
+                    Cumprimento de normas rígidas de privacidade corporativa e conformidade no trato com bases de dados de saúde e beneficiários.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Badges of technologies used -->
+              <div class="mt-6 pt-5 border-t border-slate-700/60 flex flex-wrap gap-2 text-xs">
+                <span class="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700 text-slate-300 font-medium">SQL</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700 text-slate-300 font-medium">Banco de Dados Relacional</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700 text-slate-300 font-medium">Excel Intermediário/Avançado</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700 text-slate-300 font-medium">Processos Administrativos</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700 text-slate-300 font-medium">Integridade de Dados</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS & TECHNOLOGIES (HABILIDADES) -->
+    <section id="habilidades" class="py-20 bg-slate-900/40 border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-400 bg-brand-500/10 px-3 py-1 rounded-full border border-brand-500/20">Competências</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-display text-white mt-3">Habilidades Técnicas &amp; Humanas</h2>
+          <p class="text-slate-400 text-sm sm:text-base mt-3">
+            Conjunto completo de ferramentas e soft skills para entregar valor de ponta a ponta em projetos de tecnologia.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Column 1: Dados & Business Intelligence -->
+          <div class="bg-slate-800/60 border border-slate-700/80 rounded-2xl p-7 shadow-lg">
+            <div class="flex items-center gap-3 pb-4 border-b border-slate-700/60 mb-6">
+              <div class="w-10 h-10 rounded-xl bg-brand-500/20 text-brand-400 flex items-center justify-center text-lg">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <h3 class="text-lg font-bold font-display text-white">Dados &amp; Analytics</h3>
+            </div>
+
+            <div class="space-y-4 text-xs">
+              <div>
+                <div class="flex justify-between font-semibold mb-1.5 text-slate-200">
+                  <span>SQL &amp; Modelagem de Dados</span>
+                  <span class="text-brand-400">Avançado</span>
+                </div>
+                <div class="w-full bg-slate-700/70 h-2 rounded-full overflow-hidden">
+                  <div class="bg-gradient-to-r from-brand-500 to-accent-500 h-2 rounded-full" style="width: 90%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between font-semibold mb-1.5 text-slate-200">
+                  <span>Power BI &amp; Dashboards</span>
+                  <span class="text-brand-400">Intermediário</span>
+                </div>
+                <div class="w-full bg-slate-700/70 h-2 rounded-full overflow-hidden">
+                  <div class="bg-gradient-to-r from-brand-500 to-accent-500 h-2 rounded-full" style="width: 80%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between font-semibold mb-1.5 text-slate-200">
+                  <span>Excel para Análise</span>
+                  <span class="text-brand-400">Intermediário / Avançado</span>
+                </div>
+                <div class="w-full bg-slate-700/70 h-2 rounded-full overflow-hidden">
+                  <div class="bg-gradient-to-r from-brand-500 to-accent-500 h-2 rounded-full" style="width: 85%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between font-semibold mb-1.5 text-slate-200">
+                  <span>Ciência de Dados (Estatística &amp; Python)</span>
+                  <span class="text-accent-400">Especialização CEUB</span>
+                </div>
+                <div class="w-full bg-slate-700/70 h-2 rounded-full overflow-hidden">
+                  <div class="bg-gradient-to-r from-brand-500 to-accent-500 h-2 rounded-full" style="width: 75%"></div>
+                </div>
+              </div>
+
+              <div class="pt-3 flex flex-wrap gap-1.5">
+                <span class="px-2 py-1 rounded bg-slate-700/50 text-slate-300">DML/DDL</span>
+                <span class="px-2 py-1 rounded bg-slate-700/50 text-slate-300">Joins &amp; Subqueries</span>
+                <span class="px-2 py-1 rounded bg-slate-700/50 text-slate-300">ETL</span>
+                <span class="px-2 py-1 rounded bg-slate-700/50 text-slate-300">Normalização</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Desenvolvimento de Software -->
+          <div class="bg-slate-800/60 border border-slate-700/80 rounded-2xl p-7 shadow-lg">
+            <div class="flex items-center gap-3 pb-4 border-b border-slate-700/60 mb-6">
+              <div class="w-10 h-10 rounded-xl bg-accent-500/20 text-accent-400 flex items-center justify-center text-lg">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h3 class="text-lg font-bold font-display text-white">Desenvolvimento &amp; Git</h3>
+            </div>
+
+            <div class="space-y-4 text-xs">
+              <div>
+                <div class="flex justify-between font-semibold mb-1.5 text-slate-200">
+                  <span>HTML5 &amp; CSS3</span>
+                  <span class="text-accent-400">Sólido</span>
+                </div>
+                <div class="w-full bg-slate-700/70 h-2 rounded-full overflow-hidden">
+                  <div class="bg-gradient-to-r from-accent-500 to-data-teal h-2 rounded-full" style="width: 88%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between font-semibold mb-1.5 text-slate-200">
+                  <span>JavaScript</span>
+                  <span class="text-accent-400">Intermediário</span>
+                </div>
+                <div class="w-full bg-slate-700/70 h-2 rounded-full overflow-hidden">
+                  <div class="bg-gradient-to-r from-accent-500 to-data-teal h-2 rounded-full" style="width: 78%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between font-semibold mb-1.5 text-slate-200">
+                  <span>PHP &amp; Backend</span>
+                  <span class="text-accent-400">Intermediário</span>
+                </div>
+                <div class="w-full bg-slate-700/70 h-2 rounded-full overflow-hidden">
+                  <div class="bg-gradient-to-r from-accent-500 to-data-teal h-2 rounded-full" style="width: 75%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between font-semibold mb-1.5 text-slate-200">
+                  <span>Git, GitHub &amp; Versionamento</span>
+                  <span class="text-accent-400">Prático</span>
+                </div>
+                <div class="w-full bg-slate-700/70 h-2 rounded-full overflow-hidden">
+                  <div class="bg-gradient-to-r from-accent-500 to-data-teal h-2 rounded-full" style="width: 85%"></div>
+                </div>
+              </div>
+
+              <div class="pt-3 flex flex-wrap gap-1.5">
+                <span class="px-2 py-1 rounded bg-slate-700/50 text-slate-300">Git / GitHub</span>
+                <span class="px-2 py-1 rounded bg-slate-700/50 text-slate-300">APIs REST</span>
+                <span class="px-2 py-1 rounded bg-slate-700/50 text-slate-300">CRUD</span>
+                <span class="px-2 py-1 rounded bg-slate-700/50 text-slate-300">Autenticação Segura</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 3: Soft Skills & Idiomas -->
+          <div class="bg-slate-800/60 border border-slate-700/80 rounded-2xl p-7 shadow-lg">
+            <div class="flex items-center gap-3 pb-4 border-b border-slate-700/60 mb-6">
+              <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg">
+                <i class="fa-solid fa-users-gear"></i>
+              </div>
+              <h3 class="text-lg font-bold font-display text-white">Soft Skills &amp; Idiomas</h3>
+            </div>
+
+            <div class="space-y-4 text-xs">
+              <div class="p-3 rounded-xl bg-slate-700/40 border border-slate-700">
+                <div class="flex items-center justify-between font-semibold text-slate-200">
+                  <span class="flex items-center gap-2"><i class="fa-solid fa-earth-americas text-sky-400"></i> Inglês Fluente / Avançado</span>
+                  <span class="text-sky-300 font-bold">EC Manchester</span>
+                </div>
+                <p class="text-[11px] text-slate-400 mt-1">Confortável em reuniões, leitura e documentações internacionais.</p>
+              </div>
+
+              <div class="p-3 rounded-xl bg-slate-700/40 border border-slate-700">
+                <div class="flex items-center justify-between font-semibold text-slate-200">
+                  <span class="flex items-center gap-2"><i class="fa-solid fa-comments text-emerald-400"></i> Comunicação &amp; Interação</span>
+                  <span class="text-emerald-300 font-bold">Destaque</span>
+                </div>
+                <p class="text-[11px] text-slate-400 mt-1">Facilidade em alinhar expectativas com equipes técnicas e administrativas.</p>
+              </div>
+
+              <div class="p-3 rounded-xl bg-slate-700/40 border border-slate-700">
+                <div class="flex items-center justify-between font-semibold text-slate-200">
+                  <span class="flex items-center gap-2"><i class="fa-solid fa-bolt text-amber-400"></i> Proatividade &amp; Resolução</span>
+                  <span class="text-amber-300 font-bold">Atitude</span>
+                </div>
+                <p class="text-[11px] text-slate-400 mt-1">Busca constante por aprendizado contínuo e resolução autônoma.</p>
+              </div>
+
+              <div class="p-3 rounded-xl bg-slate-700/40 border border-slate-700">
+                <div class="flex items-center justify-between font-semibold text-slate-200">
+                  <span class="flex items-center gap-2"><i class="fa-solid fa-fire text-rose-400"></i> Engajamento em TI</span>
+                  <span class="text-rose-300 font-bold">Paixão</span>
+                </div>
+                <p class="text-[11px] text-slate-400 mt-1">Entusiasmo genuíno por novas tecnologias, IA e ecossistema de dados.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION (PROJETOS PESSOAIS & GITHUB INTEGRADO) -->
+    <section id="projetos" class="py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="text-xs font-bold uppercase tracking-wider text-data-teal bg-teal-500/10 px-3 py-1 rounded-full border border-teal-500/20">Portfólio &amp; Código</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-display text-white mt-3">Projetos &amp; Repositórios no GitHub</h2>
+          <p class="text-slate-400 text-sm sm:text-base mt-3">
+            Aplicações práticas que demonstram domínio em segurança de dados, backend, geolocalização e interfaces web modernas. Acesse os códigos-fonte diretamente no GitHub.
+          </p>
+        </div>
+
+        <!-- GitHub Profile Banner Destaque -->
+        <div class="mb-12 bg-gradient-to-r from-slate-800 via-slate-850 to-slate-900 border-2 border-slate-700 hover:border-slate-500 rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl transition-all">
+          <div class="flex items-center gap-4 text-center md:text-left">
+            <div class="w-16 h-16 rounded-2xl bg-white/10 text-white flex items-center justify-center text-3xl flex-shrink-0 shadow-lg">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div>
+              <div class="flex flex-wrap items-center justify-center md:justify-start gap-2">
+                <h3 class="text-xl font-bold font-display text-white">github.com/EnzoRoncisvale</h3>
+                <span class="text-xs font-semibold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">Repositórios Ativos</span>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-300 mt-1">
+                Acompanhe meus commits, estudos em Ciência de Dados, códigos de projetos e evoluções no meu perfil oficial do GitHub.
+              </p>
+            </div>
+          </div>
+
+          <a href="https://github.com/EnzoRoncisvale" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 rounded-xl bg-white hover:bg-slate-200 text-slate-900 font-bold text-sm flex items-center gap-2.5 shadow-xl hover:scale-105 active:scale-95 transition-all whitespace-nowrap">
+            <i class="fa-brands fa-github text-base"></i>
+            <span>Ver Todos os Repositórios</span>
+            <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i>
+          </a>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          
+          <!-- Projeto 1: Sistema de Chat Seguro -->
+          <div class="bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700/80 hover:border-brand-500/60 rounded-3xl p-7 sm:p-8 shadow-xl transition duration-300 flex flex-col justify-between group">
+            <div>
+              <div class="flex items-center justify-between gap-4 mb-4">
+                <div class="w-12 h-12 rounded-xl bg-brand-500/20 text-brand-400 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-brand-500/10 text-brand-300 border border-brand-500/30 text-xs font-semibold">
+                  Full Stack &amp; Segurança
+                </span>
+              </div>
+
+              <h3 class="text-2xl font-bold font-display text-white group-hover:text-brand-300 transition-colors">
+                Sistema de Chat Seguro com Autenticação e Mensagens Privadas
+              </h3>
+
+              <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+                Desenvolvimento de uma plataforma completa de bate-papo em tempo real com controle de acesso restrito a usuários cadastrados. Foco primordial na proteção de dados, integridade de credenciais e comunicação privada entre membros.
+              </p>
+
+              <!-- Key features checklist -->
+              <div class="mt-5 space-y-2 text-xs text-slate-300">
+                <div class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-emerald-400"></i>
+                  <span>Cadastro seguro e hash criptográfico de senhas no banco de dados.</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-emerald-400"></i>
+                  <span>Autenticação por sessões protegidas e controle rígido de autorização.</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-emerald-400"></i>
+                  <span>Módulo de mensagens privadas e isolamento de conversas por usuário.</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-emerald-400"></i>
+                  <span>Medidas ativas de segurança contra injeções SQL e manipulação indevida.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-slate-700/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div class="flex flex-wrap gap-2 text-xs">
+                <span class="px-2.5 py-1 rounded-md bg-slate-800 text-brand-300 font-mono border border-slate-700">PHP</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-800 text-brand-300 font-mono border border-slate-700">MySQL / SQL</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-800 text-brand-300 font-mono border border-slate-700">JavaScript</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-800 text-brand-300 font-mono border border-slate-700">HTML5/CSS3</span>
+              </div>
+              <a href="https://github.com/EnzoRoncisvale" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-white hover:text-brand-300 flex items-center gap-1.5 transition">
+                <i class="fa-brands fa-github text-sm"></i>
+                <span>Ver no GitHub</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Projeto 2: Marcação de Partidas Esportivas -->
+          <div class="bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700/80 hover:border-accent-500/60 rounded-3xl p-7 sm:p-8 shadow-xl transition duration-300 flex flex-col justify-between group">
+            <div>
+              <div class="flex items-center justify-between gap-4 mb-4">
+                <div class="w-12 h-12 rounded-xl bg-accent-500/20 text-accent-400 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                  <i class="fa-solid fa-map-location-dot"></i>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-accent-500/10 text-accent-300 border border-accent-500/30 text-xs font-semibold">
+                  Geolocalização &amp; Dados
+                </span>
+              </div>
+
+              <h3 class="text-2xl font-bold font-display text-white group-hover:text-accent-300 transition-colors">
+                Aplicação de Mapeamento e Agendamento de Partidas Esportivas
+              </h3>
+
+              <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+                Aplicativo dinâmico que conecta praticantes de esportes por meio de um mapa interativo. Permite aos usuários criar eventos esportivos, visualizar quadras/locais e marcar partidas com parâmetros detalhados.
+              </p>
+
+              <!-- Key features checklist -->
+              <div class="mt-5 space-y-2 text-xs text-slate-300">
+                <div class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-emerald-400"></i>
+                  <span>Visualização de partidas e locais diretamente no mapa georreferenciado.</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-emerald-400"></i>
+                  <span>Marcação precisa de local, data, horário e modalidade esportiva (futebol, basquete, etc.).</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-emerald-400"></i>
+                  <span>Armazenamento e modelagem relacional dos eventos e participantes em banco de dados.</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-emerald-400"></i>
+                  <span>Filtros instantâneos por tipo de esporte e proximidade de horários.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-slate-700/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div class="flex flex-wrap gap-2 text-xs">
+                <span class="px-2.5 py-1 rounded-md bg-slate-800 text-accent-300 font-mono border border-slate-700">Mapas / Geo API</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-800 text-accent-300 font-mono border border-slate-700">SQL Database</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-800 text-accent-300 font-mono border border-slate-700">JavaScript</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-800 text-accent-300 font-mono border border-slate-700">UX Responsiva</span>
+              </div>
+              <a href="https://github.com/EnzoRoncisvale" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-white hover:text-accent-300 flex items-center gap-1.5 transition">
+                <i class="fa-brands fa-github text-sm"></i>
+                <span>Ver no GitHub</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Projeto 3: Tunico's Gym (Repositório Real no GitHub) -->
+          <div class="bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700/80 hover:border-slate-500 rounded-3xl p-7 sm:p-8 shadow-xl transition duration-300 flex flex-col justify-between group">
+            <div>
+              <div class="flex items-center justify-between gap-4 mb-4">
+                <div class="w-12 h-12 rounded-xl bg-slate-700/60 text-white flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                  <i class="fa-solid fa-dumbbell"></i>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-slate-700/40 text-slate-300 border border-slate-600 text-xs font-semibold">
+                  Repositório GitHub
+                </span>
+              </div>
+
+              <h3 class="text-2xl font-bold font-display text-white group-hover:text-slate-200 transition-colors">
+                Tunico's Gym - Plataforma Web &amp; Redesign de Alta Performance
+              </h3>
+
+              <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+                Desenvolvimento completo de landing page para academia em estética monocromática *Performance*, com buscador e filtro de 31 unidades em tempo real, gerador dinâmico de vouchers e integração com WhatsApp.
+              </p>
+
+              <div class="mt-5 space-y-2 text-xs text-slate-300">
+                <div class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-emerald-400"></i>
+                  <span>Filtro dinâmico de unidades por região (DF, GO, BA) e busca textual instantânea.</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-emerald-400"></i>
+                  <span>Design Responsivo, tipografia esportiva e alta velocidade de carregamento.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-slate-700/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div class="flex flex-wrap gap-2 text-xs">
+                <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-mono border border-slate-700">HTML5</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-mono border border-slate-700">CSS3</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-mono border border-slate-700">JavaScript</span>
+              </div>
+              <a href="https://github.com/EnzoRoncisvale/tunicos-gym" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-white hover:text-brand-300 flex items-center gap-1.5 transition">
+                <i class="fa-brands fa-github text-sm"></i>
+                <span>Ver Código (tunicos-gym)</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Projeto 4: Delivery Pizzaria (Repositório Real no GitHub) -->
+          <div class="bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700/80 hover:border-slate-500 rounded-3xl p-7 sm:p-8 shadow-xl transition duration-300 flex flex-col justify-between group">
+            <div>
+              <div class="flex items-center justify-between gap-4 mb-4">
+                <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                  <i class="fa-solid fa-pizza-slice"></i>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/30 text-xs font-semibold">
+                  Repositório GitHub
+                </span>
+              </div>
+
+              <h3 class="text-2xl font-bold font-display text-white group-hover:text-amber-200 transition-colors">
+                Sistema Web de Delivery &amp; Pedidos Online
+              </h3>
+
+              <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+                Aplicação SPA para e-commerce gastronômico com cardápio dinâmico (64 produtos), personalizador de sabores meio a meio, cálculo de frete por bairro de Brasília e gerador de pedidos formatados para WhatsApp.
+              </p>
+
+              <div class="mt-5 space-y-2 text-xs text-slate-300">
+                <div class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-emerald-400"></i>
+                  <span>Carrinho de compras interativo, taxas automatizadas e seletores dinâmicos.</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-emerald-400"></i>
+                  <span>Estrutura de dados organizada para cardápios e cálculo em tempo real.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-slate-700/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div class="flex flex-wrap gap-2 text-xs">
+                <span class="px-2.5 py-1 rounded-md bg-slate-800 text-amber-300 font-mono border border-slate-700">JavaScript</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-800 text-amber-300 font-mono border border-slate-700">Tailwind CSS</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-800 text-amber-300 font-mono border border-slate-700">SPA</span>
+              </div>
+              <a href="https://github.com/EnzoRoncisvale/pizzaria-teste" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-white hover:text-amber-300 flex items-center gap-1.5 transition">
+                <i class="fa-brands fa-github text-sm"></i>
+                <span>Ver Código (pizzaria-teste)</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION (CONTATO & REDES SOCIAIS) -->
+    <section id="contato" class="py-20 bg-slate-900/60 border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">Conexão</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-display text-white mt-3">Vamos Conversar?</h2>
+          <p class="text-slate-400 text-sm sm:text-base mt-3">
+            Estou à disposição para entrevistas, oportunidades profissionais e projetos desafiadores. Entre em contato por qualquer um dos canais abaixo:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Card GitHub -->
+          <a href="https://github.com/EnzoRoncisvale" target="_blank" rel="noopener noreferrer" class="bg-slate-800/60 hover:bg-slate-800 border border-slate-700/80 hover:border-slate-400 rounded-2xl p-6 transition duration-300 group flex flex-col justify-between shadow-lg">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-white/15 text-white flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <h3 class="text-base font-bold text-white group-hover:text-slate-200 transition-colors">GitHub</h3>
+              <p class="text-xs text-slate-400 mt-1">Acesse meus códigos, repositórios públicos e projetos de estudo.</p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-slate-700/60 flex items-center text-xs font-semibold text-white gap-1.5">
+              <span>github.com/EnzoRoncisvale</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            </div>
+          </a>
+
+          <!-- Card LinkedIn -->
+          <a href="https://www.linkedin.com/in/enzo-roncisvale-164890215/" target="_blank" rel="noopener noreferrer" class="bg-slate-800/60 hover:bg-slate-800 border border-slate-700/80 hover:border-blue-500 rounded-2xl p-6 transition duration-300 group flex flex-col justify-between shadow-lg">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-blue-600/20 text-blue-400 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <h3 class="text-base font-bold text-white group-hover:text-blue-400 transition-colors">LinkedIn</h3>
+              <p class="text-xs text-slate-400 mt-1">Conecte-se comigo profissionalmente e veja meu histórico.</p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-slate-700/60 flex items-center text-xs font-semibold text-blue-400 gap-1.5">
+              <span>Acessar perfil</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            </div>
+          </a>
+
+          <!-- Card WhatsApp -->
+          <a href="https://wa.me/5561982217080?text=Ol%C3%A1%20Enzo,%20vi%20seu%20curr%C3%ADculo%20e%20gostaria%20de%20conversar!" target="_blank" rel="noopener noreferrer" class="bg-slate-800/60 hover:bg-slate-800 border border-slate-700/80 hover:border-emerald-500 rounded-2xl p-6 transition duration-300 group flex flex-col justify-between shadow-lg">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <h3 class="text-base font-bold text-white group-hover:text-emerald-400 transition-colors">WhatsApp</h3>
+              <p class="text-xs text-slate-400 mt-1">(61) 98221-7080 • Resposta rápida para mensagens e ligações.</p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-slate-700/60 flex items-center text-xs font-semibold text-emerald-400 gap-1.5">
+              <span>Mandar mensagem</span>
+              <i class="fa-solid fa-paper-plane text-[10px]"></i>
+            </div>
+          </a>
+
+          <!-- Card E-mail com clique de cópia -->
+          <div onclick="copyToClipboard('enzoroncisvale@gmail.com', 'E-mail copiado com sucesso!')" class="cursor-pointer bg-slate-800/60 hover:bg-slate-800 border border-slate-700/80 hover:border-brand-500 rounded-2xl p-6 transition duration-300 group flex flex-col justify-between shadow-lg" title="Clique para copiar">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-brand-500/20 text-brand-400 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <h3 class="text-base font-bold text-white group-hover:text-brand-400 transition-colors">E-mail</h3>
+              <p class="text-xs text-slate-400 mt-1 break-all">enzoroncisvale@gmail.com</p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-slate-700/60 flex items-center text-xs font-semibold text-brand-400 gap-1.5">
+              <span>Clique para copiar</span>
+              <i class="fa-regular fa-copy text-[10px]"></i>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Quick Interactive Contact Form -->
+        <div class="mt-12 max-w-2xl mx-auto bg-slate-800/50 border border-slate-700/80 rounded-3xl p-6 sm:p-8 backdrop-blur-sm">
+          <h3 class="text-lg font-bold font-display text-white text-center mb-2">Enviar Mensagem Direta</h3>
+          <p class="text-xs text-slate-400 text-center mb-6">Preencha abaixo para abrir seu gerenciador de e-mail com a mensagem já formatada para o Enzo.</p>
+          
+          <form id="contactForm" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-medium text-slate-300 mb-1">Seu Nome / Empresa</label>
+                <input type="text" id="senderName" required placeholder="Ex: Recrutador(a) / Empresa" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900/80 border border-slate-700 text-white text-xs focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500">
+              </div>
+              <div>
+                <label class="block text-xs font-medium text-slate-300 mb-1">Assunto</label>
+                <input type="text" id="emailSubject" required placeholder="Ex: Oportunidade em Dados / Sistemas" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900/80 border border-slate-700 text-white text-xs focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-1">Mensagem</label>
+              <textarea id="emailMessage" rows="3" required placeholder="Olá Enzo, gostaríamos de conversar sobre uma oportunidade..." class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900/80 border border-slate-700 text-white text-xs focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-3 rounded-xl bg-gradient-to-r from-brand-600 to-accent-600 hover:from-brand-700 hover:to-accent-700 text-white font-semibold text-xs flex items-center justify-center gap-2 shadow-lg shadow-brand-500/25 transition">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Enviar Mensagem por E-mail</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800 bg-slate-950 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-brand-600 to-accent-500 flex items-center justify-center text-white font-bold text-sm">
+          ER
+        </div>
+        <div>
+          <span class="font-bold text-sm text-white">Enzo Roncisvale</span>
+          <span class="block text-[11px] text-slate-400">Ensino Superior em ADS &amp; Ciência de Dados (CEUB)</span>
+        </div>
+      </div>
+
+      <p class="text-xs text-slate-400">
+        &copy; 2026 Enzo Roncisvale. Brasília - DF.
+      </p>
+
+      <div class="flex items-center gap-4 text-sm text-slate-400">
+        <a href="https://github.com/EnzoRoncisvale" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors" title="GitHub"><i class="fa-brands fa-github text-base"></i></a>
+        <a href="https://www.linkedin.com/in/enzo-roncisvale-164890215/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors" title="LinkedIn"><i class="fa-brands fa-linkedin text-base"></i></a>
+        <a href="https://wa.me/5561982217080" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition-colors" title="WhatsApp"><i class="fa-brands fa-whatsapp text-base"></i></a>
+        <a href="mailto:enzoroncisvale@gmail.com" class="hover:text-brand-400 transition-colors" title="E-mail"><i class="fa-solid fa-envelope text-base"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <aside aria-label="Ações Rápidas">
+    <a href="https://wa.me/5561982217080?text=Ol%C3%A1%20Enzo,%20vi%20seu%20curr%C3%ADculo%20e%20gostaria%20de%20conversar!" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white flex items-center justify-center text-2xl shadow-xl shadow-emerald-500/40 hover:scale-110 active:scale-95 transition-all group" title="Conversar no WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="absolute right-16 bg-slate-900 border border-slate-700 text-white text-xs px-3 py-1.5 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-md">
+        Falar com Enzo no WhatsApp
+      </span>
+    </a>
+  </aside>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-slate-800 border border-brand-500/50 text-white text-xs font-semibold px-4 py-2.5 rounded-xl shadow-2xl flex items-center gap-2 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+    <i class="fa-solid fa-check text-emerald-400"></i>
+    <span id="toastMsg">Mensagem</span>
+  </div>
+
+  <!-- PRINT RESUME LAYOUT (Only visible when printing or saving as PDF) -->
+  <div id="printResume" class="hidden">
+    <div class="print-container">
+      <div class="print-header">
+        <h1>Enzo Roncisvale</h1>
+        <h2>Ensino Superior em Análise e Desenvolvimento de Sistemas (CEUB) | Pós-Graduando em Ciência de Dados (CEUB)</h2>
+        <div class="print-contact">
+          <span>Brasília - DF</span> • 
+          <span>(61) 98221-7080</span> • 
+          <span>enzoroncisvale@gmail.com</span> • 
+          <span>github.com/EnzoRoncisvale</span> • 
+          <span>linkedin.com/in/enzo-roncisvale-164890215</span>
+        </div>
+      </div>
+
+      <div class="print-section">
+        <h3>Objetivo &amp; Resumo Profissional</h3>
+        <p>Profissional com <strong>Ensino Superior em Análise e Desenvolvimento de Sistemas pelo Centro Universitário de Brasília (CEUB)</strong> e <strong>Pós-Graduando em Ciência de Dados também pelo CEUB</strong>. Experiência de 10 meses na CASSI com consultas estruturadas em banco de dados relacional (SQL) e suporte a processos corporativos. Sólida base em modelagem relacional, Power BI, desenvolvimento de software e versionamento com Git/GitHub, somada à fluência em língua inglesa obtida no Reino Unido (EC Manchester). Foco em aliar desenvolvimento robusto de sistemas à inteligência analítica de dados.</p>
+      </div>
+
+      <div class="print-section">
+        <h3>Formação Acadêmica &amp; Certificações (CEUB &amp; Internacional)</h3>
+        <ul>
+          <li><strong>Pós-Graduação em Ciência de Dados</strong> — Centro Universitário de Brasília (CEUB) [Em andamento | 07/2026 - 07/2027]</li>
+          <li><strong>Ensino Superior em Análise e Desenvolvimento de Sistemas</strong> — Centro Universitário de Brasília (CEUB) [Concluído | 07/2022 - 11/2025]</li>
+          <li><strong>General English Course (Nível Avançado)</strong> — EC Manchester English Language School, Manchester - Reino Unido [Concluído | 03/2019 - 07/2019]</li>
+        </ul>
+      </div>
+
+      <div class="print-section">
+        <h3>Experiência Profissional</h3>
+        <p><strong>CASSI (Caixa de Assistência dos Funcionários do Banco do Brasil)</strong> — 10 Meses</p>
+        <p><em>Atuação em Consulta de Banco de Dados e Processos Administrativos</em></p>
+        <p>Elaboração e execução de consultas em banco de dados relacional (SQL) para extração de informações e auditoria de relatórios gerenciais; otimização e controle de processos administrativos operacionais de saúde; garantia da conformidade, integridade e governança da informação.</p>
+      </div>
+
+      <div class="print-section">
+        <h3>Habilidades &amp; Competências</h3>
+        <p><strong>Tecnologias:</strong> SQL, Modelagem Relacional de Dados, Power BI, Excel Intermediário/Avançado, JavaScript, PHP, HTML5, CSS3, Git, GitHub, Conceitos e Algoritmos de Ciência de Dados.</p>
+        <p><strong>Idiomas:</strong> Inglês Fluente / Avançado (EC Manchester - UK).</p>
+        <p><strong>Soft Skills:</strong> Proatividade, facilidade de comunicação e interação interpessoal, raciocínio analítico, adaptabilidade e dedicação constante a inovações em TI.</p>
+      </div>
+
+      <div class="print-section">
+        <h3>Projetos &amp; Repositórios (GitHub: github.com/EnzoRoncisvale)</h3>
+        <p><strong>1. Sistema de Chat Seguro com Autenticação:</strong> Aplicação web completa com cadastro criptografado, sessões seguras, mensagens privadas e banco de dados relacional (PHP, SQL, HTML5, CSS3, JS).</p>
+        <p><strong>2. Aplicação de Marcação de Partidas Esportivas:</strong> Plataforma para geolocalização e agendamento de partidas esportivas em mapa interativo, com filtros de horário/esporte e persistência de dados.</p>
+        <p><strong>3. Repositórios Web &amp; Aplicações Modernas no GitHub:</strong> Projetos com arquiteturas SPA, filtros em tempo real e integração com APIs.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
