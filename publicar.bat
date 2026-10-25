@@ -11,7 +11,7 @@ if %ERRORLEVEL% NEQ 0 (
     echo Nenhum link remoto configurado ainda.
     echo Certifique-se de ter criado o repositório em https://github.com/new
     echo Configurando remote origin para https://github.com/EnzoRoncisvale/curriculo.git ...
-    git remote add origin https://github.com/EnzoRoncisvale/curriculo.git
+    git remote add origin https://github.com/EnzoRoncisvale/Curr-culo-25-10.git
 )
 
 echo.
@@ -27,13 +27,12 @@ if %ERRORLEVEL% EQU 0 (
     echo.
     echo ========================================================
     echo   [SUCESSO] Código enviado com sucesso para o GitHub!
-    echo   Acesse: https://github.com/EnzoRoncisvale/curriculo
+    echo   Acesse: https://github.com/EnzoRoncisvale/Curr-culo-25-10
     echo ========================================================
 ) else (
     echo.
     echo ========================================================
-    echo   [AVISO] Verifique se você já criou o repositório 'curriculo'
-    echo   no seu GitHub (https://github.com/new) antes de rodar o push.
+    echo   [AVISO] Verifique sua conexão com o GitHub.
     echo ========================================================
 )
 
